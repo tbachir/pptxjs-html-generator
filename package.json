@@ -5,11 +5,7 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "build": "tsc",
-    "dev": "tsc --watch",
-    "test": "jest",
-    "lint": "eslint src/**/*.ts",
-    "prepare": "npm run build"
+    "postinstall": "echo \"Package installed successfully\""
   },
   "keywords": [
     "powerpoint",
@@ -20,22 +16,25 @@
     "presentation",
     "video"
   ],
-  "author": "Your Name",
+  "author": "Your Name <your.email@example.com>",
   "license": "MIT",
+  "homepage": "https://github.com/tbachir/pptxjs-html-generator#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tbachir/pptxjs-html-generator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tbachir/pptxjs-html-generator/issues"
+  },
   "dependencies": {
     "jszip": "^3.10.1"
   },
-  "devDependencies": {
-    "@types/jest": "^29.0.0",
-    "@types/node": "^20.19.8",
-    "@typescript-eslint/eslint-plugin": "^6.21.0",
-    "@typescript-eslint/parser": "^6.21.0",
-    "eslint": "^8.57.1",
-    "jest": "^29.0.0",
-    "typescript": "^5.8.3"
-  },
   "files": [
     "dist",
-    "README.md"
-  ]
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=16.0.0"
+  }
 }
